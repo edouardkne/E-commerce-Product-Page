@@ -512,3 +512,38 @@ body {
         line-height: 1.5;
         margin-bottom: 1rem;
     }
+
+    /* ISSUE 6: PRICING */
+    .pricing-section {
+        margin-bottom: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        inline-size: auto;
+
+    }
+
+    .pricing-container {
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    .current-price {
+        font-size: 1.5rem;
+    }
+
+    .discount-badge {
+        font-size: 1.5rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .original-price {
+        font-size: 1.5rem;
+    }
+
+    /* ISSUE 6: QUANTITY SELECTOR */
+    .quantity-selector {
+        width: 100%;
+        height: 48px;
+    }
+
+   

@@ -34,6 +34,41 @@ function switchImage() {
 
 
 
+const quantityDisplay = document.getElementById('quantityDisplay');
+const increaseBtn = document.getElementById('increaseBtn');
+const decreaseBtn = document.getElementById('decreaseBtn');
+
+let quantity = 0;
+
+increaseBtn.addEventListener('click', increaseQuantity);
+decreaseBtn.addEventListener('click', decreaseQuantity);
+
+// Keyboard support
+[increaseBtn, decreaseBtn].forEach(btn => {
+    btn.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+        }
+    });
+});
+
+function increaseQuantity() {
+    quantity++;
+    updateQuantityDisplay();
+}
+
+function decreaseQuantity() {
+    if (quantity > 0) {
+        quantity--;
+        updateQuantityDisplay();
+    }
+}
+
+function updateQuantityDisplay() {
+    quantityDisplay.textContent = quantity;
+}
+
 
 
 
