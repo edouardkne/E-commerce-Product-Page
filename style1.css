@@ -486,3 +486,29 @@ body {
     height: 16px;
     filter: brightness(0) invert(1);
 }
+
+ /* ISSUE 5: PRODUCT INFO */
+    .product-info {
+        max-width: 100%;
+        padding: 0;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .company-name {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.75rem;
+    }
+
+    .product-title {
+        font-size: 1.75rem;
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
+    }
+
+    .product-description {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }

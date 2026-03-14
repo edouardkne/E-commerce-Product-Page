@@ -34,6 +34,10 @@ function switchImage() {
 
 
 
+
+
+
+
 const menuToggle = document.getElementById('menuToggle');
 const closeMenu = document.getElementById('closeMenu');
 const mobileNavOverlay = document.getElementById('mobileNavOverlay');
