@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    /* Primary Colors */
+    --color-orange: hsl(26, 100%, 55%);
+    --color-pale-orange: hsl(25, 100%, 94%);
+
+    /* Neutral Colors */
+    --color-very-dark-blue: hsl(220, 13%, 13%);
+    --color-dark-grayish-blue: hsl(219, 9%, 45%);
+    --color-grayish-blue: hsl(220, 14%, 75%);
+    --color-light-grayish-blue: hsl(223, 64%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+
+    /* Typography */
+    --font-family: 'Kumbh Sans', sans-serif;
+    --font-size-body: 16px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-very-dark-blue);
+}
+
+body {
+    background-color: var(--color-white);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
